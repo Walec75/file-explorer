@@ -6,6 +6,7 @@ A Qt-based file explorer application with customizable settings and a file syste
 
 - Responsive file explorer using Qt Widgets
 - Custom file system model to interact with the file system
+- Separate window for managing default settings, currently under development.
 
 ## Prerequisites
 
