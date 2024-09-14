@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsWindow</class>
+ <widget class="QWidget" name="SettingsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>844</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Default settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-color: rgb(255, 120, 0);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1,1,1,1,1">
+   <item row="5" column="0" rowspan="2">
+    <layout class="QVBoxLayout" name="extended_opts_layout">
+     <item>
+      <widget class="QCheckBox" name="size_chek_box">
+       <property name="text">
+        <string>Size</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="type_check_box">
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="date_check_box">
+       <property name="text">
+        <string>Last modified</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="permissions_check_box">
+       <property name="text">
+        <string>Permissions</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="created_check_box">
+       <property name="text">
+        <string>Created</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="owner_check_box">
+       <property name="text">
+        <string>Owner</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLineEdit" name="default_dir_line"/>
+   </item>
+   <item row="3" column="0" alignment="Qt::AlignmentFlag::AlignBottom">
+    <widget class="QLabel" name="opts_label">
+     <property name="text">
+      <string>Extended view additional options</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QSpinBox" name="icon_size_spin_box"/>
+   </item>
+   <item row="6" column="3">
+    <widget class="QPushButton" name="save_button">
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignBottom">
+    <widget class="QLabel" name="default_dir_label">
+     <property name="text">
+      <string>Default directory</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="view_type_combo_box">
+     <item>
+      <property name="text">
+       <string>Minimal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Extended</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="3" alignment="Qt::AlignmentFlag::AlignBottom">
+    <widget class="QLabel" name="icon_size_label">
+     <property name="text">
+      <string>Icon size</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignBottom">
+    <widget class="QLabel" name="view_type_label">
+     <property name="text">
+      <string>View type</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QComboBox" name="icon_size_combo_box">
+     <item>
+      <property name="text">
+       <string>Tiny</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Small</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Normal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Large</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Extra large</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Custom</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QCheckBox" name="dot_files_check_box">
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+       <bold>false</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Show hidden files</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
