@@ -130,6 +130,7 @@ void MainWindow::set_working_directory(const QString& path, bool went_back)
     ui->main_table_view->setRootIndex(index);
     ui->main_list_view->setRootIndex(index);
     ui->path_line->setText(cwd_path);
+    resize_views_to_contents();
 }
 
 void MainWindow::go_back()
@@ -193,6 +194,7 @@ void MainWindow::on_icon_size_combo_box_currentIndexChanged(int index)
         qInfo() << "Invalid icon size option";
         break;
     }
+    resize_views_to_contents();
 }
 
 int MainWindow::get_icon_size()
@@ -288,6 +290,7 @@ void MainWindow::change_column_state(int checked, int col)
     } else {
         ui->main_table_view->hideColumn(col);
     }
+    resize_views_to_contents();
 }
 
 void MainWindow::on_check_box_size_stateChanged(int arg1) { change_column_state(arg1, 1); }
